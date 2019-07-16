@@ -41,10 +41,7 @@
     }
   },
   "dependencies": {
-    "ast-types": "^0.13.2",
-    "jscodeshift": "^0.6.4"
-  },
-  "resolutions": {
-    "ast-types": "^0.13.2"
+    "jscodeshift": "^0.6.4",
+    "recast": "^0.18.1"
   }
 }
