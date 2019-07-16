@@ -20,7 +20,8 @@
     "fix": "npm run eslint -- --fix & npm run prettier -- --write & wait",
     "lint": "npm run eslint & wait",
     "prettier": "prettier -l README.md package.json",
-    "eslint": "eslint ."
+    "eslint": "eslint .",
+    "postinstall": "patch-package"
   },
   "prettier": {
     "singleQuote": true,
@@ -42,6 +43,7 @@
   },
   "dependencies": {
     "jscodeshift": "^0.6.4",
-    "recast": "^0.18.1"
+    "patch-package": "^6.1.2",
+    "postinstall-postinstall": "^2.0.0"
   }
 }

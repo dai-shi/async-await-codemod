@@ -232,3 +232,9 @@ async function conflictingVariableNamesWithShadowDeclaration() {
     c.other();
   });
 }
+
+/*
+function thenTrueCatchFalse() {
+  return b().then(c => true).catch(() => false);
+}
+*/
