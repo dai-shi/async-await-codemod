@@ -233,8 +233,11 @@ async function conflictingVariableNamesWithShadowDeclaration() {
   });
 }
 
-/*
-function thenTrueCatchFalse() {
-  return b().then(c => true).catch(() => false);
+async function thenTrueCatchFalse() {
+  try {
+    const c = await b();
+    return true;
+  } catch (error) {
+    return false;
+  }
 }
-*/
